@@ -22,7 +22,7 @@ const deletePost = (req, res) => {
 }
 
 const getEditPost = (req, res) => {
-  const title = 'Edit Post'
+  const title = 'Edit post'
   Post.findById(req.params.id)
     .then((post) => res.render(createPath('edit-post'), { post, title }))
     .catch((error) => handleError(res, error))

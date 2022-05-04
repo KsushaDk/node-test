@@ -11,4 +11,6 @@ const getContacts = (req, res) => {
     })
 }
 
-module.exports = getContacts
+module.exports = {
+  getContacts,
+}
