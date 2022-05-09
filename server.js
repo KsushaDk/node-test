@@ -27,7 +27,7 @@ mongoose
 app.listen(process.env.PORT, (error) => {
   error
     ? console.log(errorMsg(error))
-    : console.log(successMsg(`listening port ${PORT}`))
+    : console.log(successMsg(`listening port ${process.env.PORT}`))
 })
 
 app.use(express.urlencoded({ extended: false }))

@@ -29,7 +29,7 @@ const getPost = (req, res) => {
 const deletePost = (req, res) => {
   const { id } = req.params
   Post.findByIdAndDelete(id)
-    .then((post) => res.status(200).json(id))
+    .then(() => res.status(200).json(id))
     .catch((error) => handleError(res, error))
 }
 
